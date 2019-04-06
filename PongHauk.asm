@@ -1,147 +1,80 @@
 .data
 	array:	.word		0, 1, 2, 3, 4
-	print0: .asciiz 	"-------Pong------\n"
-	print1: .asciiz 	"(0)          (1)\n"
+	print0: .asciiz 	"-Tabuleiro Inicial-\n"
+	print1: .asciiz 	"(s1)         (s2)\n"
 	print2: .asciiz		" |  º       º | \n"
 	print3: .asciiz		" |   º     º  | \n"
 	print4: .asciiz		" |    º   º   | \n"	
-	print5: .asciiz		" |     (4)    | \n"
+	print5: .asciiz		" |    (s5)    | \n"
 	print6: .asciiz		" |    º   º   | \n"
 	print7: .asciiz		" |   º     º  | \n"
 	print8: .asciiz		" |  º       º | \n"
-	print9: .asciiz		"(2)__________(3)\n\n"
-	
-	
-	print.0: .asciiz 	"-------Pong------\n"
-	print.1: .asciiz 	"(O)          (O)\n"
-	print.2: .asciiz	" |  º       º | \n"
-	print.3: .asciiz	" |   º     º  | \n"
-	print.4: .asciiz	" |    º   º   | \n"	
-	print.5: .asciiz	" |     ( )    | \n"
-	print.6: .asciiz	" |    º   º   | \n"
-	print.7: .asciiz	" |   º     º  | \n"
-	print.8: .asciiz	" |  º       º | \n"
-	print.9: .asciiz	"(X)__________(X)\n\n"
-	
+	print9: .asciiz		"(s3)_________(s4)\n\n"
 	
 	botao_jogador1: .asciiz		"Botões jogador 1: ( 0 | 1 )\n\n"
 	botao_jogador2: .asciiz		"Botões jogador 2: ( 2 | 3 )\n"
+	
+	print_opcoes_jgdor1: .asciiz 	"Qual peça deseja mover: ( 0 | 1)? \n"
+	print_posicoes_array: .asciiz 	"Qual posição deseja jogar (Jogador 1): \n"
 	
 .text
 
 main:
 	la $t0, array
-	li $s1, 0 
-	jal print_jogo
+	li $s7, 0 
 	
-	jal print_botao_jogador1
-	jal le_do_teclado1
-	jal print_jogada
-	jal print_botao_jogador2
-	jal le_do_teclado2
+	# Atribui valores fixos para as posicoes do array
+	li $s1, 1 
+	sw $s1, 0($t0)
 	
-print_jogo:
-	la   $a0, print0
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print1
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print2
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print3
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print4
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print5
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print6
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print7
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print8
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print9
-        li   $v0, 4                   
-        syscall 
-        
-
-        
-print_botao_jogador1:
-	la   $a0, botao_jogador1
-        li   $v0, 4                   
-        syscall 
-        
-le_do_teclado1:
-	li $v0, 5	
+	li $s2, 2
+	sw $s2, 4($t0)
+	
+	li $s3, 3
+	sw $s3, 8($t0)
+	
+	li $s4, 4
+	sw $s4, 12($t0)
+	
+	li $s5, 5
+	sw $s5, 16($t0)
+	
+	# Le do teclado
+	li $v0, 5 # valor está em $v0
 	syscall		
 	jr $ra
 	
-print_jogada:
-	la   $a0, print.0
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print.1
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print.2
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print.3
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print.4
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print.5
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print.6
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print.7
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print.8
-        li   $v0, 4                   
-        syscall 
-        
-        la   $a0, print.9
-        li   $v0, 4                   
-        syscall
+	move $t7, $v0
+	li $v0, 1
+	move $a0, $t7
 	
-loop:
-	slti $t2, $s1, 5
-	beq $t2, $zero, exit
-	lw $t1, 0($t0)
-	addi $t0, $t0, 4
-	addi $s1, $s1, 1
-	j loop
+	jal posicoes_array
 	
-exit:
-        li  $v0, 10
+	beq $a0, $s5, reg_s1_para_s5
+	
+reg_s1_para_s5:
+	move $t6, $s1
+	li $s1, 5
+	move $s5, $t6
+	
+	li   $s5, 1                   
         syscall
+        
+reg_s1_para_s2:
+	move $t6, $s1
+	li $s1, 5
+	move $s2, $t6
+	
+	li   $s2, 1                   
+        syscall
+        
+        
+        
+        
+        
+        
+	 
+posicoes_array:
+	la   $a0, print_posicoes_array
+        li   $v0, 4                   
+        syscall 
