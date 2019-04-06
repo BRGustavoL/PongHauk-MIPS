@@ -50,16 +50,31 @@ main:
 	
 	jal posicoes_array
 	
+	#IF PARA REGISTRADOR S1
+	beq $a0, $s2, reg_s1_para_s2
 	beq $a0, $s5, reg_s1_para_s5
 	
-reg_s1_para_s5:
-	move $t6, $s1
-	li $s1, 5
-	move $s5, $t6
+	#IF PARA REGISTRADOR S2
+	beq $a0, $s4, reg_s2_para_s4
+	beq $a0, $s5, reg_s2_para_s5
 	
-	li   $s5, 1                   
-        syscall
-        
+	#IF PARA REGISTRADOR S3
+	beq $a0, $s1, reg_s3_para_s1
+	beq $a0, $s4, reg_s3_para_s4
+	beq $a0, $s5, reg_s3_para_s5
+	
+	#IF PARA REGISTRADOR S4
+	beq $a0, $s2, reg_s4_para_s2
+	beq $a0, $s3, reg_s4_para_s3
+	beq $a0, $s5, reg_s4_para_s5
+	
+	#IF PARA REGISTRADOR S5
+	beq $a0, $s1, reg_s5_para_s1
+	beq $a0, $s2, reg_s5_para_s2
+	beq $a0, $s3, reg_s5_para_s3
+	beq $a0, $s4, reg_s5_para_s4
+	
+# REGISTRADOR S1
 reg_s1_para_s2:
 	move $t6, $s1
 	li $s1, 5
@@ -68,10 +83,114 @@ reg_s1_para_s2:
 	li   $s2, 1                   
         syscall
         
+reg_s1_para_s5:
+	move $t6, $s1
+	li $s1, 5
+	move $s5, $t6
+	
+	li   $s5, 1                   
+        syscall
+
+# REGISTRADOR S2
+reg_s2_para_s4:
+	move $t6, $s2
+	li $s2, 5
+	move $s4, $t6
+	
+	li   $s4, 1                   
+        syscall
         
+reg_s2_para_s5:
+	move $t6, $s2
+	li $s2, 5
+	move $s5, $t6
+	
+	li   $s5, 1                   
+        syscall
+
+#REGISTRADOR S3
+reg_s3_para_s1:
+	move $t6, $s3
+	li $s3, 5
+	move $s1, $t6
+	
+	li   $s1, 1                   
+        syscall    
         
+reg_s3_para_s4:
+	move $t6, $s3
+	li $s3, 5
+	move $s4, $t6
+	
+	li   $s4, 1                   
+        syscall    
+            
+reg_s3_para_s5:
+	move $t6, $s3
+	li $s3, 5
+	move $s5, $t6
+	
+	li   $s5, 1                   
+        syscall 
         
+#REGISTRADOR S4   
+reg_s4_para_s2:
+	move $t6, $s4
+	li $s4, 5
+	move $s2, $t6
+	
+	li   $s2, 1                   
+        syscall 
+         
+reg_s4_para_s3:
+	move $t6, $s4
+	li $s4, 5
+	move $s3, $t6
+	
+	li   $s3, 1                   
+        syscall  
         
+reg_s4_para_s5:
+	move $t6, $s4
+	li $s4, 5
+	move $s5, $t6
+	
+	li   $s5, 1                   
+        syscall    
+        
+#REGISTRADOR S5
+
+reg_s5_para_s1:
+	move $t6, $s5
+	li $s5, 5
+	move $s1, $t6
+	
+	li   $s1, 1                   
+        syscall  
+
+reg_s5_para_s2:
+	move $t6, $s5
+	li $s5, 5
+	move $s2, $t6
+	
+	li   $s2, 1                   
+        syscall
+
+reg_s5_para_s3:
+	move $t6, $s5
+	li $s5, 5
+	move $s3, $t6
+	
+	li   $s3, 1                   
+        syscall 
+         
+reg_s5_para_s4:
+	move $t6, $s5
+	li $s5, 5
+	move $s4, $t6
+	
+	li   $s4, 1                   
+        syscall   
         
 	 
 posicoes_array:
