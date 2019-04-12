@@ -472,7 +472,7 @@ le_do_teclado_jogador2_s3_para_s1:
      
      	beq $a0, $s1, print_s3_para_s1_jogador2
      	
-le_do_teclado_jogador1_s4_para_s3:
+le_do_teclado_jogador1_s4_para_s3_2:
 	la   $a0, print_selecao_jogador1
         li   $v0, 4                   
         syscall 
@@ -488,7 +488,7 @@ le_do_teclado_jogador1_s4_para_s3:
      
      	beq $a0, $s3, print_s4_para_s3_jogador1
      	
-le_do_teclado_jogador2_s1_para_s4:
+le_do_teclado_jogador2_s1_para_s4_2:
 	la   $a0, print_selecao_jogador2
         li   $v0, 4                   
         syscall 
@@ -504,7 +504,7 @@ le_do_teclado_jogador2_s1_para_s4:
      
      	beq $a0, $s4, print_s1_para_s4_jogador2
      	
-le_do_teclado_jogador1_s3_para_s1:
+le_do_teclado_jogador1_s3_para_s1_2:
 	la   $a0, print_selecao_jogador1
         li   $v0, 4                   
         syscall 
@@ -1207,7 +1207,7 @@ print_s3_para_s1_jogador2:
         li   $v0, 4                   
         syscall
         
-        j le_do_teclado_jogador1_s4_para_s3
+        j le_do_teclado_jogador1_s4_para_s3_2
         
 print_s4_para_s3_jogador1:
 	la   $a0, print_s4_para_s3_jogador1_1
@@ -1250,7 +1250,7 @@ print_s4_para_s3_jogador1:
         li   $v0, 4                   
         syscall
         
-        j le_do_teclado_jogador2_s1_para_s4
+        j le_do_teclado_jogador2_s1_para_s4_2
         
 print_s1_para_s4_jogador2:
 	la   $a0, print_s1_para_s4_jogador2_1
@@ -1293,7 +1293,7 @@ print_s1_para_s4_jogador2:
         li   $v0, 4                   
         syscall
 	
-	j le_do_teclado_jogador1_s3_para_s1
+	j le_do_teclado_jogador1_s3_para_s1_2
 	
 print_s3_para_s1_jogador1:
 	la   $a0, print_s3_para_s1_jogador1_1
