@@ -142,11 +142,92 @@
 	print_s2_para_s3_9: .asciiz	" |  º       º | \n"
 	print_s2_para_s3_10: .asciiz	"(O)__________(X)\n\n"
 	
-	print_selecao_jogador1: .asciiz		"Jogador X selecione o destino:"
-	print_selecao_jogador2: .asciiz		"Jogador O selecione o destino:"
+	# Jogada 5 para 2
+	print_s5_para_s2_1: .asciiz 	"----------------\n"
+	print_s5_para_s2_2: .asciiz 	"(X)          (X)\n"
+	print_s5_para_s2_3: .asciiz	" |  º       º | \n"
+	print_s5_para_s2_4: .asciiz	" |   º     º  | \n"
+	print_s5_para_s2_5: .asciiz	" |    º   º   | \n"	
+	print_s5_para_s2_6: .asciiz	" |     (O)    | \n"
+	print_s5_para_s2_7: .asciiz	" |    º   º   | \n"
+	print_s5_para_s2_8: .asciiz	" |   º     º  | \n"
+	print_s5_para_s2_9: .asciiz	" |  º       º | \n"
+	print_s5_para_s2_10: .asciiz	"(O)__________( )\n\n"
 	
+	# Jogada 4 para 5
+	print_s4_para_s5_1: .asciiz 	"----------------\n"
+	print_s4_para_s5_2: .asciiz 	"(X)          (X)\n"
+	print_s4_para_s5_3: .asciiz	" |  º       º | \n"
+	print_s4_para_s5_4: .asciiz	" |   º     º  | \n"
+	print_s4_para_s5_5: .asciiz	" |    º   º   | \n"	
+	print_s4_para_s5_6: .asciiz	" |     (O)    | \n"
+	print_s4_para_s5_7: .asciiz	" |    º   º   | \n"
+	print_s4_para_s5_8: .asciiz	" |   º     º  | \n"
+	print_s4_para_s5_9: .asciiz	" |  º       º | \n"
+	print_s4_para_s5_10: .asciiz	"( )__________(O)\n\n"
 	
+	# Jogada 1 para 4
+	print_s1_para_s4_jogador1_1: .asciiz 	"----------------\n"
+	print_s1_para_s4_jogador1_2: .asciiz 	"( )          (X)\n"
+	print_s1_para_s4_jogador1_3: .asciiz	" |  º       º | \n"
+	print_s1_para_s4_jogador1_4: .asciiz	" |   º     º  | \n"
+	print_s1_para_s4_jogador1_5: .asciiz	" |    º   º   | \n"	
+	print_s1_para_s4_jogador1_6: .asciiz	" |     (O)    | \n"
+	print_s1_para_s4_jogador1_7: .asciiz	" |    º   º   | \n"
+	print_s1_para_s4_jogador1_8: .asciiz	" |   º     º  | \n"
+	print_s1_para_s4_jogador1_9: .asciiz	" |  º       º | \n"
+	print_s1_para_s4_jogador1_10: .asciiz	"(X)__________(O)\n\n"
 	
+	# Jogada 3 para 1
+	print_s3_para_s1_jogador2_1: .asciiz 	"----------------\n"
+	print_s3_para_s1_jogador2_2: .asciiz 	"(O)          (X)\n"
+	print_s3_para_s1_jogador2_3: .asciiz	" |  º       º | \n"
+	print_s3_para_s1_jogador2_4: .asciiz	" |   º     º  | \n"
+	print_s3_para_s1_jogador2_5: .asciiz	" |    º   º   | \n"	
+	print_s3_para_s1_jogador2_6: .asciiz	" |     ( )    | \n"
+	print_s3_para_s1_jogador2_7: .asciiz	" |    º   º   | \n"
+	print_s3_para_s1_jogador2_8: .asciiz	" |   º     º  | \n"
+	print_s3_para_s1_jogador2_9: .asciiz	" |  º       º | \n"
+	print_s3_para_s1_jogador2_10: .asciiz	"(X)__________(O)\n\n"
+	
+	# Jogada 4 para 3
+	print_s4_para_s3_jogador1_1: .asciiz 	"----------------\n"
+	print_s4_para_s3_jogador1_2: .asciiz 	"(O)          (X)\n"
+	print_s4_para_s3_jogador1_3: .asciiz	" |  º       º | \n"
+	print_s4_para_s3_jogador1_4: .asciiz	" |   º     º  | \n"
+	print_s4_para_s3_jogador1_5: .asciiz	" |    º   º   | \n"	
+	print_s4_para_s3_jogador1_6: .asciiz	" |     (X)    | \n"
+	print_s4_para_s3_jogador1_7: .asciiz	" |    º   º   | \n"
+	print_s4_para_s3_jogador1_8: .asciiz	" |   º     º  | \n"
+	print_s4_para_s3_jogador1_9: .asciiz	" |  º       º | \n"
+	print_s4_para_s3_jogador1_10: .asciiz	"( )__________(O)\n\n"
+	
+	# Jogada 1 para 4
+	print_s1_para_s4_jogador2_1: .asciiz 	"----------------\n"
+	print_s1_para_s4_jogador2_2: .asciiz 	"( )          (X)\n"
+	print_s1_para_s4_jogador2_3: .asciiz	" |  º       º | \n"
+	print_s1_para_s4_jogador2_4: .asciiz	" |   º     º  | \n"
+	print_s1_para_s4_jogador2_5: .asciiz	" |    º   º   | \n"	
+	print_s1_para_s4_jogador2_6: .asciiz	" |     (X)    | \n"
+	print_s1_para_s4_jogador2_7: .asciiz	" |    º   º   | \n"
+	print_s1_para_s4_jogador2_8: .asciiz	" |   º     º  | \n"
+	print_s1_para_s4_jogador2_9: .asciiz	" |  º       º | \n"
+	print_s1_para_s4_jogador2_10: .asciiz	"(O)__________(O)\n\n"
+	
+	# Jogada 3 para 1
+	print_s3_para_s1_jogador1_1: .asciiz 	"----------------\n"
+	print_s3_para_s1_jogador1_2: .asciiz 	"(X)          (X)\n"
+	print_s3_para_s1_jogador1_3: .asciiz	" |  º       º | \n"
+	print_s3_para_s1_jogador1_4: .asciiz	" |   º     º  | \n"
+	print_s3_para_s1_jogador1_5: .asciiz	" |    º   º   | \n"	
+	print_s3_para_s1_jogador1_6: .asciiz	" |     ( )    | \n"
+	print_s3_para_s1_jogador1_7: .asciiz	" |    º   º   | \n"
+	print_s3_para_s1_jogador1_8: .asciiz	" |   º     º  | \n"
+	print_s3_para_s1_jogador1_9: .asciiz	" |  º       º | \n"
+	print_s3_para_s1_jogador1_10: .asciiz	"(O)__________(O)\n\n"
+	
+	print_selecao_jogador1: .asciiz		"Jogador X selecione o destino: "
+	print_selecao_jogador2: .asciiz		"Jogador O selecione o destino: "
 .text
 
 main:
@@ -309,7 +390,7 @@ le_do_teclado_jogador1_s3_para_s1:
 	li $v0, 1
 	move $a0, $t7
      
-     	beq $a0, $s3, print_s3_para_s1_jogo
+     	beq $a0, $s1, print_s3_para_s1_jogo
      	
 le_do_teclado_jogador2_s2_para_s3:
 	la   $a0, print_selecao_jogador2
@@ -325,7 +406,119 @@ le_do_teclado_jogador2_s2_para_s3:
 	li $v0, 1
 	move $a0, $t7
      
-     	beq $a0, $s2, print_s2_para_s3_jogo
+     	beq $a0, $s3, print_s2_para_s3_jogo
+     	
+le_do_teclado_jogador1_s5_para_s2:
+	la   $a0, print_selecao_jogador1
+        li   $v0, 4                   
+        syscall 
+        
+	# Le do teclado
+	li $v0, 5 
+	syscall	
+	
+	# Move numero informado para $a0
+	move $t7, $v0
+	li $v0, 1
+	move $a0, $t7
+     
+     	beq $a0, $s2, print_s5_para_s2_jogo
+     	
+le_do_teclado_jogador2_s4_para_s5:
+	la   $a0, print_selecao_jogador2
+        li   $v0, 4                   
+        syscall 
+        
+	# Le do teclado
+	li $v0, 5 
+	syscall	
+	
+	# Move numero informado para $a0
+	move $t7, $v0
+	li $v0, 1
+	move $a0, $t7
+     
+     	beq $a0, $s5, print_s4_para_s5_jogo
+     	
+le_do_teclado_jogador1_s1_para_s4:
+	la   $a0, print_selecao_jogador1
+        li   $v0, 4                   
+        syscall 
+        
+	# Le do teclado
+	li $v0, 5 
+	syscall	
+	
+	# Move numero informado para $a0
+	move $t7, $v0
+	li $v0, 1
+	move $a0, $t7
+     
+     	beq $a0, $s4, print_s1_para_s4_jogador1
+
+le_do_teclado_jogador2_s3_para_s1:
+	la   $a0, print_selecao_jogador2
+        li   $v0, 4                   
+        syscall 
+        
+	# Le do teclado
+	li $v0, 5 
+	syscall	
+	
+	# Move numero informado para $a0
+	move $t7, $v0
+	li $v0, 1
+	move $a0, $t7
+     
+     	beq $a0, $s1, print_s3_para_s1_jogador2
+     	
+le_do_teclado_jogador1_s4_para_s3:
+	la   $a0, print_selecao_jogador1
+        li   $v0, 4                   
+        syscall 
+        
+	# Le do teclado
+	li $v0, 5 
+	syscall	
+	
+	# Move numero informado para $a0
+	move $t7, $v0
+	li $v0, 1
+	move $a0, $t7
+     
+     	beq $a0, $s3, print_s4_para_s3_jogador1
+     	
+le_do_teclado_jogador2_s1_para_s4:
+	la   $a0, print_selecao_jogador2
+        li   $v0, 4                   
+        syscall 
+        
+	# Le do teclado
+	li $v0, 5 
+	syscall	
+	
+	# Move numero informado para $a0
+	move $t7, $v0
+	li $v0, 1
+	move $a0, $t7
+     
+     	beq $a0, $s4, print_s1_para_s4_jogador2
+     	
+le_do_teclado_jogador1_s3_para_s1:
+	la   $a0, print_selecao_jogador1
+        li   $v0, 4                   
+        syscall 
+        
+	# Le do teclado
+	li $v0, 5 
+	syscall	
+	
+	# Move numero informado para $a0
+	move $t7, $v0
+	li $v0, 1
+	move $a0, $t7
+     
+     	beq $a0, $s1, print_s3_para_s1_jogador1
      	
 print_tabuleiro_base:
 	la   $a0, print0
@@ -842,7 +1035,308 @@ print_s2_para_s3_jogo:
         li   $v0, 4                   
         syscall
         
-        j exit
+        j le_do_teclado_jogador1_s5_para_s2
+        
+print_s5_para_s2_jogo:
+	la   $a0, print_s5_para_s2_1
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s5_para_s2_2
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s5_para_s2_3
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s5_para_s2_4
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s5_para_s2_5
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s5_para_s2_6
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s5_para_s2_7
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s5_para_s2_8
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s5_para_s2_9
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s5_para_s2_10
+        li   $v0, 4                   
+        syscall
+        
+        j le_do_teclado_jogador2_s4_para_s5
+        
+print_s4_para_s5_jogo:
+	la   $a0, print_s4_para_s5_1
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s5_2
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s5_3
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s5_4
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s5_5
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s5_6
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s5_7
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s5_8
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s5_9
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s5_10
+        li   $v0, 4                   
+        syscall
+        
+        j le_do_teclado_jogador1_s1_para_s4
+        
+print_s1_para_s4_jogador1:
+	la   $a0, print_s1_para_s4_jogador1_1
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador1_2
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador1_3
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador1_4
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador1_5
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador1_6
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador1_7
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador1_8
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador1_9
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador1_10
+        li   $v0, 4                   
+        syscall
+        
+        j le_do_teclado_jogador2_s3_para_s1
+
+print_s3_para_s1_jogador2:
+	la   $a0, print_s3_para_s1_jogador2_1
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador2_2
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador2_3
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador2_4
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador2_5
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador2_6
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador2_7
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador2_8
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador2_9
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador2_10
+        li   $v0, 4                   
+        syscall
+        
+        j le_do_teclado_jogador1_s4_para_s3
+        
+print_s4_para_s3_jogador1:
+	la   $a0, print_s4_para_s3_jogador1_1
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s3_jogador1_2
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s3_jogador1_3
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s3_jogador1_4
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s3_jogador1_5
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s3_jogador1_6
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s3_jogador1_7
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s3_jogador1_8
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s3_jogador1_9
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s4_para_s3_jogador1_10
+        li   $v0, 4                   
+        syscall
+        
+        j le_do_teclado_jogador2_s1_para_s4
+        
+print_s1_para_s4_jogador2:
+	la   $a0, print_s1_para_s4_jogador2_1
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador2_2
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador2_3
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador2_4
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador2_5
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador2_6
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador2_7
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador2_8
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador2_9
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s1_para_s4_jogador2_10
+        li   $v0, 4                   
+        syscall
+	
+	j le_do_teclado_jogador1_s3_para_s1
+	
+print_s3_para_s1_jogador1:
+	la   $a0, print_s3_para_s1_jogador1_1
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador1_2
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador1_3
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador1_4
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador1_5
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador1_6
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador1_7
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador1_8
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador1_9
+        li   $v0, 4                   
+        syscall 
+        
+        la   $a0, print_s3_para_s1_jogador1_10
+        li   $v0, 4                   
+        syscall
+	
+	j exit
 
 exit: 
 	li  $v0, 10
